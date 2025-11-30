@@ -7,11 +7,11 @@ export async function commandInspect(state, pokemonName) {
     console.log(`Name: ${pokemon.name}`);
     console.log(`Height: ${pokemon.height}`);
     console.log(`Weight: ${pokemon.weight}`);
-    console.log(`Stats:\n`);
+    console.log(`Stats:`);
     for (const stat of pokemon.stats) {
         console.log(`  ${stat.stat.name}: ${stat.base_stat}`);
     }
-    console.log(`\nTypes:\n`);
+    console.log(`Types:`);
     for (const type of pokemon.types) {
         console.log(`  ${type.type.name}`);
     }
